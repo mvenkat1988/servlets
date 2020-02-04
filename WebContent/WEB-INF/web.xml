@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <servlet>
+    <servlet-name>abc</servlet-name>
+    <servlet-class>com.cts.srv.OurGenericServEx</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>abc</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>student</servlet-name>
+    <servlet-class>com.cts.srv.StudentInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>student</servlet-name>
+    <url-pattern>/StudentInfo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>stdelete</servlet-name>
+    <servlet-class>com.cts.srv.DeleteStdInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>stdelete</servlet-name>
+    <url-pattern>/deleteInfo</url-pattern>
+  </servlet-mapping>
+</web-app>
